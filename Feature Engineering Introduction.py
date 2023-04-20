@@ -44,7 +44,7 @@ def plot_mi_scores(scores):
 features = ["YearBuilt", "MoSold", "ScreenPorch"]
 sns.relplot(
     x="value", y="SalePrice", col="variable", data=df.melt(id_vars="SalePrice", value_vars=features), facet_kws=dict(sharex=False),
-);
+)
 plt.show()
 
 X = df.copy()
@@ -68,7 +68,7 @@ feature = "GrLivArea"
 sns.lmplot(
     x=feature, y="SalePrice", hue="BldgType", col="BldgType",
     data=df, scatter_kws={"edgecolor": 'w'}, col_wrap=3, height=4,
-);
+)
 
 
 
