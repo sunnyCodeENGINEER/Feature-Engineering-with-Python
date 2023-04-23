@@ -58,6 +58,7 @@ customer[["Policy", "Type", "Level"]]
 
 autos["make_and_style"] = autos["make"] + "_" + autos["body_style"]
 print(autos[["make", "body_style", "make_and_style"]].head())
+print("\n")
 
 # GROUP TRANSFORMS
 customer["AverageIncome"] = (
@@ -77,6 +78,7 @@ customer["StateFreq"] = (
 )
 
 print(customer[["State", "StateFreq"]].head(10))
+print("\n")
 
 # You could use a transform like this to create a "frequency encoding" for a categorical feature.
 # Create splits
@@ -94,6 +96,7 @@ df_valid = df_valid.merge(
 )
 
 print(df_valid[["Coverage", "AverageClaim"]].head(10))
+print("\n")
 
 
 
